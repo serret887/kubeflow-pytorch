@@ -1,7 +1,7 @@
 
 FROM continuumio/miniconda3
 
-RUN conda install -y jupyter notebook nomkl &&\
+RUN conda install -y jupyter notebook nomkl autopep8 &&\
     conda install -y -c conda-forge jupyter_contrib_nbextensions &&\
     conda install -y pytorch torchvision cpuonly -c pytorch &&\
     conda install -y  -c fastai fastai
